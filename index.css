@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "mingliu";
+  src: url(media/mingliu.TTF) format("truetype");
+}
+
+.title {
+	font-family: 'Tinos', sans-serif;
+	font-weight: bold;
+	font-size: 26;
+}
+
+.japTitle {
+	font-family: 'mingliu', sans-serif;
+	font-weight: bold;
+	font-size: 26;
+}
+
+.controlPanel {
+	position: fixed;
+	text-align: center;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(250, 82, 199, 0.83);
+	min-width: 50%;
+	min-height: 50%;
+	padding: 3em;
+	border-radius: 5px;
+	border: 5px solid pink;
+}
+
+.player {
+	position: fixed;
+	text-align: center;
+    top: 50%;
+    left: 50%;
+}
+
+video#bgvid {
+    position: fixed;
+	text-align: center;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(media/preview.jpg) no-repeat;
+    background-size: cover;
+}
